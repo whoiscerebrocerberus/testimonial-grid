@@ -1,0 +1,63 @@
+@use "variables"
+
+*
+    margin: 0
+
+*,::before,
+::after
+    box-sizing: variables.$natural-box
+
+body
+    min-height: 100vh
+    background: variables.$natural-white
+    min-width: 100vw
+    // overflow: hidden
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    font-family: variables.$natural-font
+
+
+.main-container
+    max-width: 1440px
+    max-height: 900px
+    display: grid
+    gap: 1rem
+    grid-gap: 1rem
+    grid-template-columns: repeat(4,1fr)
+    grid-template-areas:"da da jo ki" "je pa pa ki"
+
+.container
+    padding: 2rem
+    color: variables.$natural-white
+
+#daniel
+    grid-area: da
+    background: variables.$moderate-violet
+
+    &:before
+        background-image: url("images/bg-pattern-quotation.svg")
+        background-size: 8rem
+
+
+#jonathan
+    grid-area: jo
+    background: variables.$light-gray-blue
+
+#kira
+    grid-area: ki
+    background: variables.$natural-white
+    color: black
+
+#jeanette
+    grid-area: je
+    background: variables.$natural-white
+    color: black
+
+#patrick
+    grid-area: pa
+    background: variables.$very-dark-grayish-blue
+
+.name-image
+    display: inline-flex

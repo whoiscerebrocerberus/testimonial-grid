@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+}
+
+*, ::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: white;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow Semi Condensed", san-serif;
+}
+
+.main-container {
+  max-width: 1440px;
+  max-height: 900px;
+  display: grid;
+  gap: 1rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "da da jo ki" "je pa pa ki";
+}
+
+.container {
+  padding: 2rem;
+  color: white;
+}
+
+#daniel {
+  grid-area: da;
+  background: #7541c8;
+}
+#daniel:before {
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-size: 8rem;
+}
+
+#jonathan {
+  grid-area: jo;
+  background: #49556b;
+}
+
+#kira {
+  grid-area: ki;
+  background: white;
+  color: black;
+}
+
+#jeanette {
+  grid-area: je;
+  background: white;
+  color: black;
+}
+
+#patrick {
+  grid-area: pa;
+  background: #19212e;
+}
+
+.name-image {
+  display: inline-flex;
+}
+
+/*# sourceMappingURL=index.css.map */
