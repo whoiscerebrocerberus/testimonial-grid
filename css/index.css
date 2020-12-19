@@ -16,14 +16,15 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Barlow Semi Condensed", san-serif;
+  font-size: 1rem;
 }
 
 .main-container {
   max-width: 1440px;
   max-height: 900px;
   display: grid;
-  gap: 1rem;
-  grid-gap: 1rem;
+  gap: 1.5rem;
+  grid-gap: 1.5rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "da da jo ki" "je pa pa ki";
 }
@@ -35,11 +36,8 @@ body {
 
 #daniel {
   grid-area: da;
-  background: #7541c8;
-}
-#daniel:before {
-  background-image: url("images/bg-pattern-quotation.svg");
-  background-size: 8rem;
+  background: #7541c8 url("/images/bg-pattern-quotation.svg") no-repeat 83% 0;
+  background-size: 9rem;
 }
 
 #jonathan {
@@ -66,6 +64,36 @@ body {
 
 .name-image {
   display: inline-flex;
+}
+.name-image img {
+  border-radius: 50%;
+}
+.name-image .name-status {
+  margin-left: 1.5rem;
+}
+.name-image h3 {
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+
+.quoted-statement {
+  opacity: 0.7;
+  line-height: 1.6rem;
+}
+
+.container {
+  border-radius: 1rem;
+}
+
+.container .heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#kira .quoted-statement {
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=index.css.map */
