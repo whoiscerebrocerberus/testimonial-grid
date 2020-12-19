@@ -21,7 +21,6 @@ body {
 
 .main-container {
   max-width: 1440px;
-  max-height: 900px;
   display: grid;
   gap: 1.5rem;
   grid-gap: 1.5rem;
@@ -72,7 +71,7 @@ body {
   margin-left: 1.5rem;
 }
 .name-image h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   opacity: 0.5;
 }
 
@@ -94,6 +93,36 @@ body {
 
 #kira .quoted-statement {
   margin-top: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.img img {
+  width: 40px;
+  height: 40px;
+}
+
+#daniel img, #patrick img {
+  border: 2px solid #7541c8;
+}
+
+#jeanette,
+#kira {
+  box-shadow: 0 8px 19px -8px black;
+}
+
+.attribution {
+  margin-top: 2rem;
+}
+
+@media (min-max: 375px), (max-width: 998px) {
+  .main-container {
+    margin: 1.3rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "da" "jo" "je" "pa" "ki";
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
