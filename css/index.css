@@ -119,7 +119,7 @@ h2 {
 
 @media (min-max: 375px), (max-width: 998px) {
   .main-container {
-    margin: 1.3rem;
+    margin: 1rem;
     grid-template-columns: 1fr;
     grid-template-areas: "da" "jo" "je" "pa" "ki";
   }
